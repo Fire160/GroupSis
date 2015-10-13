@@ -14,7 +14,7 @@ public class SISRun
 		{
 		Scanner file = new Scanner(new File("studentlist3.txt"));
 		ArrayList<Students> myArray = new ArrayList<Students>();
-		for(int i = 0; i < 24; i++)
+		while(file.hasNext())
 			{
 			String z = file.next();
 			String x = file.next();
