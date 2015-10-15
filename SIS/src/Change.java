@@ -18,14 +18,14 @@ public class Change
 				System.out.println("Select a Student by their number!");
 				int name = things.nextInt();
 				System.out.println("Now select a period's grade to be changed!");
-				int classChange = things.nextInt();
+				int gradeChange = things.nextInt();
 				System.out.println("And finally assign their grade!");
 				String newGrade = things.nextLine();
-				if(classChange == 1)
+				if(gradeChange == 1)
 					{
 					studentArray.get(name).setFirstGrade(newGrade);
 					}
-				else if(classChange == 2)
+				else if(gradeChange == 2)
 					{
 					studentArray.get(name).setSecondGrade(newGrade);
 					}
@@ -41,19 +41,19 @@ public class Change
 				int name = things.nextInt();
 				System.out.println("Now select a period's class to be switched!");
 				int classChange = things.nextInt();
-				System.out.println("Now select a period's class to be switched!");
-				int class2Change = things.nextInt();
+				System.out.println("Now select a new period's class!");
+				String class2Change = things.nextLine();
 				if(classChange == 1)
 					{
-						
+						studentArray.get(name).setFirstClass(studentArray.get(studentArray.size()-2));;
 					}
 				else if(classChange == 2)
 					{
-					
+						
 					}
 				else
 					{
-					
+						
 					}
 				subRunning = false;
 				}
