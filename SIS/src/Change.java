@@ -39,13 +39,13 @@ public class Change
 				{
 				System.out.println("Select a Student by their number!");
 				int name = things.nextInt();
-				System.out.println("Now select a period's calss to be switched!");
+				System.out.println("Now select a period's class to be switched!");
 				int classChange = things.nextInt();
-				System.out.println("Now select a period's calss to be switched!");
+				System.out.println("Now select a period's class to be switched!");
 				int class2Change = things.nextInt();
 				if(classChange == 1)
 					{
-					
+						
 					}
 				else if(classChange == 2)
 					{
