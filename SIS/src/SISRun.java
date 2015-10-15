@@ -9,6 +9,38 @@ public class SISRun
 		{
 		ArrayList<Students> studentArray = createArrayList();
 		printList(studentArray);
+		boolean running = true;
+		Scanner input = new Scanner(System.in);
+		while(running == true)
+			{
+			System.out.println("Add or remove students      [1]");
+			System.out.println("Change grades or schedules  [2]");
+			System.out.println("Sort by last name/GPA/class [3]");
+			System.out.println("Print current Students      [4]");
+			System.out.println("Exit program                [5]");
+			int uMC = input.nextInt();
+			if(uMC == 1)
+				{
+				
+				}
+			else if(uMC == 2)
+				{
+				Change.change(studentArray);
+				}
+			else if(uMC == 3)
+				{
+				SortStudents.sort(studentArray);
+				}
+			else if(uMC == 4)
+				{
+				printList(studentArray);
+				}
+			else
+				{
+				running = false;
+				}
+			}
+		input.close();
 		}
 	public static ArrayList<Students> createArrayList() throws IOException
 		{
@@ -18,7 +50,7 @@ public class SISRun
 			{
 			String z = file.next();
 			String x = file.next();
-			double c = 0.4;
+			double c = 0.0;
 			String v = file.next();
 			String b = file.next();
 			String n = file.next();
@@ -27,13 +59,14 @@ public class SISRun
 			String s = file.next();
 			myArray.add(new Students(z,x,c,v,b,n,m,a,s));
 			}
+		file.close();
 		return myArray;
 		}
 	public static void printList(ArrayList<Students> studentArray)
 		{
 		for(int i = 0; i < studentArray.size(); i++)
 			{
-			System.out.println(studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " " + studentArray.get(i).getGpa() + " " + studentArray.get(i).getFirstClass() + " " + studentArray.get(i).getFirstGrade() + " " + studentArray.get(i).getSecondClass() + " " + studentArray.get(i).getSecondGrade() + " " + studentArray.get(i).getThirdClass() + " " + studentArray.get(i).getThirdGrade());
+			System.out.println("[" + i + "] " + studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " " + studentArray.get(i).getGpa() + " " + studentArray.get(i).getFirstClass() + " " + studentArray.get(i).getFirstGrade() + " " + studentArray.get(i).getSecondClass() + " " + studentArray.get(i).getSecondGrade() + " " + studentArray.get(i).getThirdClass() + " " + studentArray.get(i).getThirdGrade());
 			}
 		}
 	}

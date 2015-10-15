@@ -2,36 +2,36 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class SortStudents 
 	{
-	public static ArrayList<Students> SortLastName(ArrayList<Students> studentArray)
+	public static void sortLastName(ArrayList<Students> studentArray)
 		{
 		return;
 		}
-	public static ArrayList<Students> SortGPA(ArrayList<Students> studentArray) 
+	public static void sortGPA(ArrayList<Students> studentArray) 
 		{
 		return;
 		}
-	public static ArrayList<Students> SortClass(ArrayList<Students> studentArray) 
+	public static void sortClass(ArrayList<Students> studentArray) 
 		{
 		return;
 		}
-	public static void main(String[] args) 
+	public static void sort(ArrayList<Students> studentArray) 
 		{
 		Scanner userInput = new Scanner(System.in);
-		System.out.println("Enter 1 for sort by last name");
-		System.out.println("Enter 2 for sort by GPA");
-		System.out.println("Enter 3 for sort by GPA");
+		System.out.println("Enter 1 to sort by last name");
+		System.out.println("Enter 2 to sort by GPA");
+		System.out.println("Enter 3 to sort by GPA");
 		int userChoice = userInput.nextInt();
 		if(userChoice == 1) 
 			{
-			SortLastName();
+			sortLastName(studentArray);
 			}
 		if(userChoice == 2) 
 			{
-			SortGPA();
+			sortGPA(studentArray);
 			}
 		if(userChoice == 3) 
 			{
-			SortClass();
+			sortClass(studentArray);
 			}
 		}
 	}

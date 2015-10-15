@@ -21,75 +21,75 @@ public class Students
 		thirdClass = o;
 		thirdGrade = p;
 		}
-	public static String getfName()
+	public String getfName()
 		{
 		return fName;
 		}
-	public static void setfName(String fName)
+	public void setfName(String fName)
 		{
 		Students.fName = fName;
 		}
-	public static String getFirstClass()
+	public String getFirstClass()
 		{
 		return firstClass;
 		}
-	public static void setFirstClass(String firstClass)
+	public void setFirstClass(String firstClass)
 		{
 		Students.firstClass = firstClass;
 		}
-	public static String getFirstGrade()
+	public String getFirstGrade()
 		{
 		return firstGrade;
 		}
-	public static void setFirstGrade(String firstGrade)
+	public void setFirstGrade(String firstGrade)
 		{
 		Students.firstGrade = firstGrade;
 		}
-	public static String getlName()
+	public String getlName()
 		{
 		return lName;
 		}
-	public static void setlName(String lName)
+	public void setlName(String lName)
 		{
 		Students.lName = lName;
 		}
-	public static String getSecondClass()
+	public String getSecondClass()
 		{
 		return secondClass;
 		}
-	public static void setSecondClass(String secondClass)
+	public void setSecondClass(String secondClass)
 		{
 		Students.secondClass = secondClass;
 		}
-	public static String getSecondGrade()
+	public String getSecondGrade()
 		{
 		return secondGrade;
 		}
-	public static void setSecondGrade(String secondGrade)
+	public void setSecondGrade(String secondGrade)
 		{
 		Students.secondGrade = secondGrade;
 		}
-	public static String getThirdClass()
+	public String getThirdClass()
 		{
 		return thirdClass;
 		}
-	public static void setThirdClass(String thirdClass)
+	public void setThirdClass(String thirdClass)
 		{
 		Students.thirdClass = thirdClass;
 		}
-	public static String getThirdGrade()
+	public String getThirdGrade()
 		{
 		return thirdGrade;
 		}
-	public static void setThirdGrade(String thirdGrade)
+	public void setThirdGrade(String thirdGrade)
 		{
 		Students.thirdGrade = thirdGrade;
 		}
-	public static double getGpa()
+	public double getGpa()
 		{
 		return gpa;
 		}
-	public static void setGpa(double gpa)
+	public void setGpa(double gpa)
 		{
 		Students.gpa = gpa;
 		}
