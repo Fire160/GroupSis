@@ -1,14 +1,14 @@
 public class Students
 	{
-	private static String fName;
-	private static String lName;
-	private static String firstClass;
-	private static String firstGrade;
-	private static String secondClass;
-	private static String secondGrade;
-	private static String thirdClass;
-	private static String thirdGrade;
-	private static double gpa;
+	private String fName;
+	private String lName;
+	private String firstClass;
+	private String firstGrade;
+	private String secondClass;
+	private String secondGrade;
+	private String thirdClass;
+	private String thirdGrade;
+	private double gpa;
 	public Students(String e, String r, double a, String t, String y, String u, String i, String o, String p)
 		{
 		fName = e;
