@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class SortStudents 
@@ -15,14 +14,20 @@ public class SortStudents
 		if(userChoice == 1) 
 			{
 			Collections.sort(studentArray, new Sorters());
+			SISRun.printList(studentArray);
 			}
 		else if(userChoice == 2) 
 			{
 			Collections.sort(studentArray, new GPASort());
+			SISRun.printList(studentArray);
+			}
+		else if(userChoice == 3)
+			{
+			Collections.sort(studentArray, new ClassSort());
+			SISRun.printList(studentArray);
 			}
 		else
 			{
-			Collections.sort(studentArray, new ClassSort());
 			}
 		userInput.close();
 		}
