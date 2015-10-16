@@ -20,6 +20,7 @@ public class Change
 				System.out.println("Now select a period's grade to be changed!");
 				int gradeChange = things.nextInt();
 				System.out.println("And finally assign their grade!");
+				things.nextLine();
 				String newGrade = things.nextLine();
 				if(gradeChange == 1)
 					{
@@ -33,6 +34,9 @@ public class Change
 					{
 					studentArray.get(name).setThirdGrade(newGrade);
 					}
+				System.out.print("[" + (name + 1) + "] " + studentArray.get(name).getlName() + " " + studentArray.get(name).getfName() + " ");
+				System.out.printf("%.2f",studentArray.get(name).getGpa());
+				System.out.println(" " + studentArray.get(name).getFirstClass() + " " + studentArray.get(name).getFirstGrade() + " " + studentArray.get(name).getSecondClass() + " " + studentArray.get(name).getSecondGrade() + " " + studentArray.get(name).getThirdClass() + " " + studentArray.get(name).getThirdGrade());
 				}
 			else if(stuff == 2)
 				{
@@ -114,13 +118,14 @@ public class Change
 						{
 						}
 					}
-				SISRun.printList(studentArray);
+				System.out.print("[" + (name + 1) + "] " + studentArray.get(name).getlName() + " " + studentArray.get(name).getfName() + " ");
+				System.out.printf("%.2f",studentArray.get(name).getGpa());
+				System.out.println(" " + studentArray.get(name).getFirstClass() + " " + studentArray.get(name).getFirstGrade() + " " + studentArray.get(name).getSecondClass() + " " + studentArray.get(name).getSecondGrade() + " " + studentArray.get(name).getThirdClass() + " " + studentArray.get(name).getThirdGrade());
 				}
 			else
 				{
 				subRunning = false;
 				}
 			}
-		things.close();
 		}
 	}

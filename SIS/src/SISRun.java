@@ -5,13 +5,13 @@ import java.io.IOException;
 
 public class SISRun 
 	{
+	static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) throws IOException
 		{
 		ArrayList<Students> studentArray = createArrayList();
 		GpaCalculator.GPACalculate(studentArray);
 		printList(studentArray);
 		boolean running = true;
-		Scanner input = new Scanner(System.in);
 		while(running == true)
 			{
 			System.out.println("Add or remove students      [1]");
@@ -60,14 +60,13 @@ public class SISRun
 			String s = file.next();
 			myArray.add(new Students(z,x,c,v,b,n,m,a,s));
 			}
-		file.close();
 		return myArray;
 		}
 	public static void printList(ArrayList<Students> studentArray)
 		{
 		for(int i = 0; i < studentArray.size(); i++)
 			{
-			System.out.print("[" + i + 1 + "] " + studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " ");
+			System.out.print("[" + (i + 1) + "] " + studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " ");
 			System.out.printf("%.2f",studentArray.get(i).getGpa());
 			System.out.println(" " + studentArray.get(i).getFirstClass() + " " + studentArray.get(i).getFirstGrade() + " " + studentArray.get(i).getSecondClass() + " " + studentArray.get(i).getSecondGrade() + " " + studentArray.get(i).getThirdClass() + " " + studentArray.get(i).getThirdGrade());
 			}

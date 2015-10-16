@@ -29,6 +29,5 @@ public class SortStudents
 		else
 			{
 			}
-		userInput.close();
 		}
 	}
