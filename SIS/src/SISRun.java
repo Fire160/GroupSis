@@ -14,6 +14,7 @@ public class SISRun
 		boolean running = true;
 		while(running == true)
 			{
+			System.out.println();
 			System.out.println("Add or remove students      [1]");
 			System.out.println("Change grades or schedules  [2]");
 			System.out.println("Sort by last name/GPA/class [3]");
