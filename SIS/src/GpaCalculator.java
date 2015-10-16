@@ -10,6 +10,9 @@ public class GpaCalculator
 			String fGrade = studentArray.get(i).getFirstGrade();
 			switch(fGrade)
 				{
+				case "A+":
+				grades.add(4.00);
+				break;
 				case "A":
 				grades.add(4.00);
 				break;
@@ -53,6 +56,9 @@ public class GpaCalculator
 			String fGrade = studentArray.get(i).getSecondGrade();
 			switch(fGrade)
 				{
+				case "A+":
+				grades.add(4.00);
+				break;
 				case "A":
 				grades.add(4.00);
 				break;
@@ -96,6 +102,9 @@ public class GpaCalculator
 			String fGrade = studentArray.get(i).getThirdGrade();
 			switch(fGrade)
 				{
+				case "A+":
+				grades.add(4.00);
+				break;
 				case "A":
 				grades.add(4.00);
 				break;

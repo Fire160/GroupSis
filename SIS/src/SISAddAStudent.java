@@ -18,6 +18,7 @@ public class SISAddAStudent
 			className.add("Biology");
 			className.add("Algebra");
 			System.out.println("Please put in a first name.");
+			userInput.nextLine();
 			String firstName = userInput.nextLine();
 			System.out.println("Please put in a last name.");
 			String lastName = userInput.nextLine();

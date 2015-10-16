@@ -16,7 +16,7 @@ public class Change
 			if(stuff == 1)
 				{
 				System.out.println("Select a Student by their number!");
-				int name = things.nextInt();
+				int name = things.nextInt()- 1;
 				System.out.println("Now select a period's grade to be changed!");
 				int gradeChange = things.nextInt();
 				System.out.println("And finally assign their grade!");
@@ -34,6 +34,7 @@ public class Change
 					{
 					studentArray.get(name).setThirdGrade(newGrade);
 					}
+				GpaCalculator.GPACalculate(studentArray);
 				System.out.print("[" + (name + 1) + "] " + studentArray.get(name).getlName() + " " + studentArray.get(name).getfName() + " ");
 				System.out.printf("%.2f",studentArray.get(name).getGpa());
 				System.out.println(" " + studentArray.get(name).getFirstClass() + " " + studentArray.get(name).getFirstGrade() + " " + studentArray.get(name).getSecondClass() + " " + studentArray.get(name).getSecondGrade() + " " + studentArray.get(name).getThirdClass() + " " + studentArray.get(name).getThirdGrade());
