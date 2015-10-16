@@ -14,15 +14,15 @@ public class SortStudents
 		int userChoice = userInput.nextInt();
 		if(userChoice == 1) 
 			{
-			
+			Collections.sort(studentArray, new Sorters());
 			}
 		else if(userChoice == 2) 
 			{
-			
+			Collections.sort(studentArray, new GPASort());
 			}
 		else
 			{
-			
+			Collections.sort(studentArray, new ClassSort());
 			}
 		userInput.close();
 		}

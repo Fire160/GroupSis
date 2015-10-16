@@ -8,6 +8,7 @@ public class SISRun
 	public static void main(String[] args) throws IOException
 		{
 		ArrayList<Students> studentArray = createArrayList();
+		//GpaCalculator.GPACalculate(studentArray);
 		printList(studentArray);
 		boolean running = true;
 		Scanner input = new Scanner(System.in);
