@@ -42,7 +42,7 @@ public class SISAddAStudent
 				Scanner things = new Scanner(System.in);
 				System.out.println("Put in the number of the student you would like to remove");
 				int g = things.nextInt();
-				studentArray.remove(g);
+				studentArray.remove(g - 1);
 				SISRun.printList(studentArray);
 				things.close();
 				}

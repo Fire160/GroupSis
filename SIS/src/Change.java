@@ -37,7 +37,7 @@ public class Change
 			else if(stuff == 2)
 				{
 				System.out.println("Select a Student by their number!");
-				int name = things.nextInt();
+				int name = things.nextInt() - 1;
 				System.out.println("Now select a period to be switched!");
 				int classChange = things.nextInt();
 				System.out.println("Now select the period to be switched with!");

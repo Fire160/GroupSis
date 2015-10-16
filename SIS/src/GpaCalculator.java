@@ -4,7 +4,7 @@ public class GpaCalculator
 	{
 	public static void GPACalculate(ArrayList<Students> studentArray)
 		{
-		ArrayList<double> grades = new ArrayList<double>();
+		ArrayList grades = new ArrayList();
 		for(int i = 0; i < studentArray.size(); i ++)
 			{
 			String fGrade = studentArray.get(i).getFirstGrade();
@@ -37,10 +37,10 @@ public class GpaCalculator
 				case "D+":
 				grades.add(1.33);
 				break;
-				case "D+":
+				case "D":
 				grades.add(1.00);
 				break;
-				case "D+":
+				case "D-":
 				grades.add(0.67);
 				break;
 				case "F":
@@ -80,10 +80,10 @@ public class GpaCalculator
 				case "D+":
 				grades.add(1.33);
 				break;
-				case "D+":
+				case "D":
 				grades.add(1.00);
 				break;
-				case "D+":
+				case "D-":
 				grades.add(0.67);
 				break;
 				case "F":
@@ -123,10 +123,10 @@ public class GpaCalculator
 				case "D+":
 				grades.add(1.33);
 				break;
-				case "D+":
+				case "D":
 				grades.add(1.00);
 				break;
-				case "D+":
+				case "D-":
 				grades.add(0.67);
 				break;
 				case "F":
@@ -136,7 +136,10 @@ public class GpaCalculator
 			}
 		for(int i = 0; i < studentArray.size(); i ++)
 			{
-			studentArray.get(i).setGpa((grades.get(i) + grades.get(i + studentArray.size()) + grades.get(i + studentArray.size() + studentArray.size())) / 3 );
+			double temp1 = (double) grades.get(i);
+			double temp2 = (double) grades.get(i + studentArray.size() - 1);
+			double temp3 = (double) grades.get(i + studentArray.size() + studentArray.size() - 2);
+			studentArray.get(i).setGpa((temp1 + temp2 + temp3) / 3 );
 			}
 		}
 	}

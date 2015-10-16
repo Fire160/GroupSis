@@ -8,7 +8,7 @@ public class SISRun
 	public static void main(String[] args) throws IOException
 		{
 		ArrayList<Students> studentArray = createArrayList();
-		//GpaCalculator.GPACalculate(studentArray);
+		GpaCalculator.GPACalculate(studentArray);
 		printList(studentArray);
 		boolean running = true;
 		Scanner input = new Scanner(System.in);
@@ -67,7 +67,9 @@ public class SISRun
 		{
 		for(int i = 0; i < studentArray.size(); i++)
 			{
-			System.out.println("[" + i + "] " + studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " " + studentArray.get(i).getGpa() + " " + studentArray.get(i).getFirstClass() + " " + studentArray.get(i).getFirstGrade() + " " + studentArray.get(i).getSecondClass() + " " + studentArray.get(i).getSecondGrade() + " " + studentArray.get(i).getThirdClass() + " " + studentArray.get(i).getThirdGrade());
+			System.out.print("[" + i + 1 + "] " + studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " ");
+			System.out.printf("%.2f",studentArray.get(i).getGpa());
+			System.out.println(" " + studentArray.get(i).getFirstClass() + " " + studentArray.get(i).getFirstGrade() + " " + studentArray.get(i).getSecondClass() + " " + studentArray.get(i).getSecondGrade() + " " + studentArray.get(i).getThirdClass() + " " + studentArray.get(i).getThirdGrade());
 			}
 		}
 	}
