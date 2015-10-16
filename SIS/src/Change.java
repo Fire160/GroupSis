@@ -33,29 +33,88 @@ public class Change
 					{
 					studentArray.get(name).setThirdGrade(newGrade);
 					}
-				subRunning = false;
 				}
 			else if(stuff == 2)
 				{
 				System.out.println("Select a Student by their number!");
 				int name = things.nextInt();
-				System.out.println("Now select a period's class to be switched!");
+				System.out.println("Now select a period to be switched!");
 				int classChange = things.nextInt();
-				System.out.println("Now select a new period's class!");
-				String class2Change = things.nextLine();
+				System.out.println("Now select the period to be switched with!");
+				int class2Change = things.nextInt();
 				if(classChange == 1)
 					{
-						studentArray.get(name).setFirstClass(studentArray.get(studentArray.size()-2));;
+					if(class2Change == 2)
+						{
+						String temp = studentArray.get(name).getFirstClass();
+						String temp1 = studentArray.get(name).getFirstGrade();
+						studentArray.get(name).setFirstClass(studentArray.get(name).getSecondClass());
+						studentArray.get(name).setFirstGrade(studentArray.get(name).getSecondGrade());
+						studentArray.get(name).setSecondClass(temp);
+						studentArray.get(name).setSecondGrade(temp1);
+						}
+					else if(class2Change == 3)
+						{
+						String temp = studentArray.get(name).getFirstClass();
+						String temp1 = studentArray.get(name).getFirstGrade();
+						studentArray.get(name).setFirstClass(studentArray.get(name).getThirdClass());
+						studentArray.get(name).setFirstGrade(studentArray.get(name).getThirdGrade());
+						studentArray.get(name).setThirdClass(temp);
+						studentArray.get(name).setThirdGrade(temp1);
+						}
+					else
+						{
+						}
 					}
 				else if(classChange == 2)
 					{
-						
+					if(class2Change == 1)
+						{
+						String temp = studentArray.get(name).getSecondClass();
+						String temp1 = studentArray.get(name).getSecondGrade();
+						studentArray.get(name).setSecondClass(studentArray.get(name).getFirstClass());
+						studentArray.get(name).setSecondGrade(studentArray.get(name).getFirstGrade());
+						studentArray.get(name).setFirstClass(temp);
+						studentArray.get(name).setFirstGrade(temp1);
+						}
+					else if(class2Change == 3)
+						{
+						String temp = studentArray.get(name).getSecondClass();
+						String temp1 = studentArray.get(name).getSecondGrade();
+						studentArray.get(name).setSecondClass(studentArray.get(name).getThirdClass());
+						studentArray.get(name).setSecondGrade(studentArray.get(name).getThirdGrade());
+						studentArray.get(name).setThirdClass(temp);
+						studentArray.get(name).setThirdGrade(temp1);
+						}
+					else
+						{
+						}
 					}
 				else
 					{
-						
+					if(class2Change == 2)
+						{
+						String temp = studentArray.get(name).getThirdClass();
+						String temp1 = studentArray.get(name).getThirdGrade();
+						studentArray.get(name).setThirdClass(studentArray.get(name).getSecondClass());
+						studentArray.get(name).setThirdGrade(studentArray.get(name).getSecondGrade());
+						studentArray.get(name).setSecondClass(temp);
+						studentArray.get(name).setSecondGrade(temp1);
+						}
+					else if(class2Change == 1)
+						{
+						String temp = studentArray.get(name).getThirdClass();
+						String temp1 = studentArray.get(name).getThirdGrade();
+						studentArray.get(name).setThirdClass(studentArray.get(name).getFirstClass());
+						studentArray.get(name).setThirdGrade(studentArray.get(name).getFirstGrade());
+						studentArray.get(name).setFirstClass(temp);
+						studentArray.get(name).setFirstGrade(temp1);
+						}
+					else
+						{
+						}
 					}
-				subRunning = false;
+				SISRun.printList(studentArray);
 				}
 			else
 				{

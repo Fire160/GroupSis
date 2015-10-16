@@ -18,20 +18,20 @@ public class SISRun
 			System.out.println("Sort by last name/GPA/class [3]");
 			System.out.println("Print current Students      [4]");
 			System.out.println("Exit program                [5]");
-			int uMC = input.nextInt();
-			if(uMC == 1)
+			String u = input.nextLine();
+			if(u.contains("1"))
 				{
-				
+				SISAddAStudent.addMenu(studentArray);
 				}
-			else if(uMC == 2)
+			else if(u.contains("2"))
 				{
 				Change.change(studentArray);
 				}
-			else if(uMC == 3)
+			else if(u.contains("3"))
 				{
 				SortStudents.sort(studentArray);
 				}
-			else if(uMC == 4)
+			else if(u.contains("4"))
 				{
 				printList(studentArray);
 				}

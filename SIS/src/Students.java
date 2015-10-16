@@ -27,7 +27,7 @@ public class Students
 		}
 	public void setfName(String fName)
 		{
-		Students.fName = fName;
+		this.fName = fName;
 		}
 	public String getFirstClass()
 		{
@@ -35,7 +35,7 @@ public class Students
 		}
 	public void setFirstClass(String firstClass)
 		{
-		Students.firstClass = firstClass;
+		this.firstClass = firstClass;
 		}
 	public String getFirstGrade()
 		{
@@ -43,7 +43,7 @@ public class Students
 		}
 	public void setFirstGrade(String firstGrade)
 		{
-		Students.firstGrade = firstGrade;
+		this.firstGrade = firstGrade;
 		}
 	public String getlName()
 		{
@@ -51,7 +51,7 @@ public class Students
 		}
 	public void setlName(String lName)
 		{
-		Students.lName = lName;
+		this.lName = lName;
 		}
 	public String getSecondClass()
 		{
@@ -59,7 +59,7 @@ public class Students
 		}
 	public void setSecondClass(String secondClass)
 		{
-		Students.secondClass = secondClass;
+		this.secondClass = secondClass;
 		}
 	public String getSecondGrade()
 		{
@@ -67,7 +67,7 @@ public class Students
 		}
 	public void setSecondGrade(String secondGrade)
 		{
-		Students.secondGrade = secondGrade;
+		this.secondGrade = secondGrade;
 		}
 	public String getThirdClass()
 		{
@@ -75,7 +75,7 @@ public class Students
 		}
 	public void setThirdClass(String thirdClass)
 		{
-		Students.thirdClass = thirdClass;
+		this.thirdClass = thirdClass;
 		}
 	public String getThirdGrade()
 		{
@@ -83,7 +83,7 @@ public class Students
 		}
 	public void setThirdGrade(String thirdGrade)
 		{
-		Students.thirdGrade = thirdGrade;
+		this.thirdGrade = thirdGrade;
 		}
 	public double getGpa()
 		{
@@ -91,6 +91,6 @@ public class Students
 		}
 	public void setGpa(double gpa)
 		{
-		Students.gpa = gpa;
+		this.gpa = gpa;
 		}
 	}
