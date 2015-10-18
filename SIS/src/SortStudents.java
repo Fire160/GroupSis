@@ -7,9 +7,10 @@ public class SortStudents
 	public static void sort(ArrayList<Students> studentArray) 
 		{
 		Scanner userInput = new Scanner(System.in);
-		System.out.println("Enter 1 to sort by Last Name");
-		System.out.println("Enter 2 to sort by GPA");
-		System.out.println("Enter 3 to sort by Class");
+		System.out.println("Sort by Last Name    [1]");
+		System.out.println("Sort by GPA          [2]");
+		System.out.println("Sort by Class        [3]");
+		System.out.println("Return to menu       [4]");
 		int userChoice = userInput.nextInt();
 		if(userChoice == 1) 
 			{

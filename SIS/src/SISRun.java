@@ -14,7 +14,7 @@ public class SISRun
 		boolean running = true;
 		while(running == true)
 			{
-			System.out.println();
+			System.out.println("+---------(MAIN MENU)---------+");
 			System.out.println("Add or remove students      [1]");
 			System.out.println("Change grades or schedules  [2]");
 			System.out.println("Sort by last name/GPA/class [3]");
@@ -67,9 +67,9 @@ public class SISRun
 		{
 		for(int i = 0; i < studentArray.size(); i++)
 			{
-			System.out.print("[" + (i + 1) + "] " + studentArray.get(i).getlName() + " " + studentArray.get(i).getfName() + " ");
+			System.out.print("[" + (i + 1) + "]  [LAST] " + studentArray.get(i).getlName() + " [FIRST] " + studentArray.get(i).getfName() + " [GPA] ");
 			System.out.printf("%.2f",studentArray.get(i).getGpa());
-			System.out.println(" " + studentArray.get(i).getFirstClass() + " " + studentArray.get(i).getFirstGrade() + " " + studentArray.get(i).getSecondClass() + " " + studentArray.get(i).getSecondGrade() + " " + studentArray.get(i).getThirdClass() + " " + studentArray.get(i).getThirdGrade());
+			System.out.println(" [P1] " + studentArray.get(i).getFirstClass() + " [GRADE] " + studentArray.get(i).getFirstGrade() + " [P2] " + studentArray.get(i).getSecondClass() + " [GRADE] " + studentArray.get(i).getSecondGrade() + " [P3] " + studentArray.get(i).getThirdClass() + " [GRADE] " + studentArray.get(i).getThirdGrade());
 			}
 		}
 	}

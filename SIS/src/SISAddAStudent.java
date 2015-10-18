@@ -6,9 +6,9 @@ public class SISAddAStudent
 	public static void addMenu(ArrayList<Students> studentArray)
 		{
 		Scanner userInput = new Scanner(System.in);
-		System.out.println("Type 1 to add a student");
-		System.out.println("Type 2 to remove a student");
-		System.out.println("Type any other number to return to the menu");
+		System.out.println("Add a student       [1]");
+		System.out.println("Remove a student    [2]");
+		System.out.println("Return to the menu  [3]");
 		int stuff = userInput.nextInt();
 		if(stuff == 1)
 			{
